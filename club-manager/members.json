@@ -1,0 +1,24 @@
+{ "members":[{
+    "firstName": "James",
+    "lastName": "Higgins",
+    "userName": "James.Higgins",
+    "yearsInLeague": 4,
+    "lastYearRanking": 2,
+    "projectionRanking": 1,
+    "location": "Portland",
+    "leagueChampion": 0,
+    "role": "member",
+    "jobTitle": "student"
+    },{
+      "firstName": "Karson",
+      "lastName": "Kobelin",
+      "userName": "Karson.Kobe",
+      "yearsInLeague": 4,
+      "lastYearRanking": 14,
+      "projectionRanking": 14,
+      "location": "Portland",
+      "leagueChampion": 0,
+      "role": "Commissioner",
+      "jobTitle": "Steel Salesman"
+    }]
+}
