@@ -7,11 +7,16 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 export class MemberService {
   members: FirebaseListObservable<any[]>;
 
-  constructor(constructor(private database: AngularFireDatabase) {
+  constructor(private database: AngularFireDatabase) {
     this.members = database.list('members');
   }
+
   getMembers(){
-  return this.members;
+    return this.members;
+  }
+
+  getMemberById(memberId: string){
+    return this.database.object('members/' + memberId);
   }
 
 }
