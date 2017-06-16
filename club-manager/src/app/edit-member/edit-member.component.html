@@ -1,3 +1,38 @@
 <p>
   edit-member works!
 </p>
+<h4>Edit Member Details</h4>
+<label>New First Name:</label>
+<input [(ngModel)]="selectedMember.firstName">
+<br>
+<label>New Last Name:</label>
+<input [(ngModel)]="selectedMember.lastName">
+<br>
+<label>New User Name:</label>
+<input [(ngModel)]="selectedMember.userName">
+<br>
+<label>New Years in the League:</label>
+<input [(ngModel)]="selectedMember.yearsInLeague">
+<br>
+<label>New Last Year's Ranking:</label>
+<input [(ngModel)]="selectedMember.lastYearRanking">
+<br>
+<label>New Projected Ranking:</label>
+<input [(ngModel)]="selectedMember.projectionRanking">
+<br>
+<label>New Location:</label>
+<input [(ngModel)]="selectedMember.location">
+<br>
+<label>New League Champion Year:</label>
+<input [(ngModel)]="selectedMember.leagueChampion">
+<br>
+<label>New Role:</label>
+<input [(ngModel)]="selectedMember.role">
+<br>
+<label>New Job Title:</label>
+<input [(ngModel)]="selectedMember.jobTitle">
+<br>
+
+<button (click)="beginUpdatingMember(selectedMember)">Update</button>
+<hr>
+<button (click)="beginDeletingMember(selectedMember)">Delete</button>

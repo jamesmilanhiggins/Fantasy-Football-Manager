@@ -20,6 +20,26 @@ export class MemberService {
   }
   addMember(newMember: Member) {
   this.members.push(newMember);
-}
+  }
+
+  updateMember(localUpdatedMember){
+    var memberEntryInFirebase = this.getMemberById(localUpdatedMember.$key);
+    memberEntryInFirebase.update({firstName: localUpdatedMember.firstName,
+                                lastName: localUpdatedMember.lastName,
+                                userName: localUpdatedMember.userName,
+                                yearsInLeague: localUpdatedMember.yearsInLeague,
+                                lastYearRanking: localUpdatedMember.lastYearRanking,
+                                projectionRanking: localUpdatedMember.projectionRanking,
+                                location: localUpdatedMember.location,
+                                leagueChampion: localUpdatedMember.leagueChampion,
+                                role: localUpdatedMember.role,
+                                jobTitle: localUpdatedMember.jobTitle});
+  }
+
+  deleteMember(localMemberToDelete){
+    var memberEntryInFirebase = this.getMemberById(localMemberToDelete.$key);
+    memberEntryInFirebase.remove();
+  }
+
 
 }
