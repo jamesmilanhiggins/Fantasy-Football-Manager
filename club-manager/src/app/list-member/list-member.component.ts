@@ -15,7 +15,6 @@ export class ListMemberComponent implements OnInit {
   currentRoute: string = this.router.url;
   filterByRole: string = "allRoles";
 
-
   constructor(private router: Router, private memberService: MemberService) {}
 
   ngOnInit() {

@@ -1,4 +1,4 @@
-<div >
+<div class="player-outline">
   <h2>Fantasy Football Team Member</h2>
 
   <select (change)="onChange($event.target.value)">
@@ -8,18 +8,14 @@
   </select>
 
 
-  <div *ngFor="let member of members | async | rolePipe:filterByRole">
+  <div  *ngFor="let member of members | async | rolePipe:filterByRole">
     <div >
       <h3 (click)="goToDetailPage(member)"><em>{{member.firstName}} {{member.lastName}}</em></h3>
       <img src="{{member.image}}" class="portrait">
-      <br>
-      <br>
-      <br>
-
       <div *ngIf="currentRoute === '/admin'">
         {{member.jobTitle}}
-        <hr>
         <app-edit-member [selectedMember]="member"></app-edit-member>
+        <hr>
       </div>
     </div>
   </div>
