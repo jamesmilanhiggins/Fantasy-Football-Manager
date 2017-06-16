@@ -16,10 +16,22 @@
   margin: 10px;
 }
 
+.navbar-nav {
+  background-color: #50B948;
+}
+.navbar-brand {
+  background-color: #FFFF00;
+}
+.navbar {
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
-/*espn green 105719*/
-
-/*espn red DD0000*/
-
-
-/*espn black 2B2C2D*/
+.navbar-right li{
+  background-color: #FFFF00;
+  width: 250px;
+  text-align: center;
+}
+#admin-css {
+  text-align: center;
+}

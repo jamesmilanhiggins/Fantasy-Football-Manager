@@ -5,7 +5,7 @@ import { AboutComponent }   from './about/about.component';
 import { ListMemberComponent }   from './list-member/list-member.component';
 import { MemberDetailComponent }   from './member-detail/member-detail.component';
 import { AdminComponent }   from './admin/admin.component';
-import { AnnouncementComponent }   from './announcement/announcement.component';
+import { ListAnnouncementsComponent }   from './list-announcements/list-announcements.component';
 
 
 
@@ -30,9 +30,10 @@ const appRoutes: Routes = [
     path: 'admin',
     component: AdminComponent
   },
+
   {
     path: 'announcements',
-    component: AnnouncementComponent
+    component: ListAnnouncementsComponent
   }
 ];
 

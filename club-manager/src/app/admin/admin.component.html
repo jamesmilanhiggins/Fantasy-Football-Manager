@@ -79,3 +79,33 @@
 <div>
   <app-list-member></app-list-member>
 </div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add A New Annoucement</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Announcement Title:</label>
+        <br>
+        <input #newTitle>
+      </div>
+      <div>
+        <label>Announcement Description:</label>
+        <br>
+        <input #newDescription>
+      </div>
+      <div>
+        <label>Written By:</label>
+        <br>
+        <input #newAuthor>
+      </div>
+      <!-- <button class="btn btn-primary" (click)="submitForm(newTitle.value, newDescription.value, newAuthor.value, ); newTitle.value=''; newDescription.value=''; newAuthor.value=''">Add</button> -->
+    </div>
+  </div>
+</div>
+
+<div>
+  <app-list-announcements></app-list-announcements>
+</div>
