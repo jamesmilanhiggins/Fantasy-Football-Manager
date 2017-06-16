@@ -20,7 +20,14 @@ export class ListMemberComponent implements OnInit {
     this.members = this.memberService.getMembers();
   }
 
-  // goToDetailPage(clickedMember: Member) {
-  //   this.router.navigate(['members', clickedMember.$key]);
-  // };
+  goToDetailPage(clickedMember) {
+    this.router.navigate(['members', clickedMember.$key]);
+  };
 }
+
+
+//   goToDetailPage(clickedProject) {
+//     this.router.navigate(['projects', clickedProject.$key]);
+//   };
+//
+// }
