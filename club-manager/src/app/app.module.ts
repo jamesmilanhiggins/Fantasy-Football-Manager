@@ -21,6 +21,7 @@ import { EditMemberComponent } from './edit-member/edit-member.component';
 import { AdminComponent } from './admin/admin.component';
 import { MemberDetailComponent } from './member-detail/member-detail.component';
 import { RolePipePipe } from './role-pipe.pipe';
+import { AnnouncementComponent } from './announcement/announcement.component';
 
 
 export const firebaseConfig = {
@@ -39,7 +40,8 @@ export const firebaseConfig = {
     EditMemberComponent,
     AdminComponent,
     MemberDetailComponent,
-    RolePipePipe
+    RolePipePipe,
+    AnnouncementComponent
 
   ],
   imports: [

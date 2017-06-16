@@ -36,6 +36,5 @@
 <input [(ngModel)]="selectedMember.image">
 <br>
 
-<button (click)="beginUpdatingMember(selectedMember)">Update</button>
-<hr>
-<button (click)="beginDeletingMember(selectedMember)">Delete</button>
+<button class="btn btn-success "(click)="beginUpdatingMember(selectedMember)">Update</button>
+<button class="btn btn-danger" (click)="beginDeletingMember(selectedMember)">Delete</button>

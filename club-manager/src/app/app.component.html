@@ -9,42 +9,27 @@
     <ul class="nav navbar-nav">
       <li><a routerLink="list-member">Members</a></li>
     </ul>
+    <ul class="nav navbar-nav">
+      <li><a routerLink="announcements">Announcements</a></li>
+    </ul>
     <ul *ngIf="(user | async) != null" class="nav navbar-nav navbar-right">
       <li>  <a routerLink="admin">Admin</a></li>
     </ul>
-    <!-- <label>Email:</label>
-    <input #email>
-
-    <label>Password:</label>
-    <input type="password" #password>
-
-    <button (click)="login(email.value, password.value); email.value=''; password.value=''">Login</button>
-    <button (click)="logout()">Logout</button>
-
-    <div *ngIf="(user | async) == null"> Please log in. </div>
-    <div *ngIf="(user | async) != null"> Welcome in {{ (user | async)?.email }}! </div> -->
-    <!-- <ul class="nav navbar-nav">
-      <li><a routerLink="list-member">Members</a></li>
-    </ul> -->
   </div>
 </nav>
 <nav class="navbar navbar-default">
   <div class="container-fluid">
-    <ul *ngIf="(user | async) != null" class="nav navbar-nav navbar-right">
-      <li>  <a routerLink="admin">Admin</a></li>
-    </ul>
     <label>Email:</label>
     <input #email>
 
     <label>Password:</label>
     <input type="password" #password>
 
-    <button *ngIf="(user | async)?.email == null" (click)="login(email.value, password.value); email.value=''; password.value=''">Login</button>
-    <button *ngIf="(user | async)?.email != null"(click)="logout()">Logout</button>
+    <button class="btn btn-info btn-sm" *ngIf="(user | async)?.email == null" (click)="login(email.value, password.value); email.value=''; password.value=''">Login</button>
+    <button class="btn btn-warning btn-sm" *ngIf="(user | async)?.email != null"(click)="logout()">Logout</button>
 
     <div *ngIf="(user | async) == null"> Please log in. </div>
-    <div *ngIf="(user | async)?.email != null"> Please REMOVE log in button. </div>
-    <div *ngIf="(user | async) != null"> Welcome in {{ (user | async)?.email }}! </div>
+    <div *ngIf="(user | async) != null"> Welcome in {{ (user | async)?.email }}!  You have admin access and can edit and delete members.</div>
 
   </div>
 </nav>
