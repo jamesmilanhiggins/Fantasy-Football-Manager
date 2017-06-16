@@ -1,6 +1,3 @@
-<p>
-  edit-member works!
-</p>
 <h4>Edit Member Details</h4>
 <label>New First Name:</label>
 <input [(ngModel)]="selectedMember.firstName">
@@ -36,5 +33,5 @@
 <input [(ngModel)]="selectedMember.image">
 <br>
 
-<button class="btn btn-success "(click)="beginUpdatingMember(selectedMember)">Update</button>
+<button class="btn btn-warning "(click)="beginUpdatingMember(selectedMember)">Update</button>
 <button class="btn btn-danger" (click)="beginDeletingMember(selectedMember)">Delete</button>

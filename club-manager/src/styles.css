@@ -34,6 +34,7 @@
   border-radius: 5%;
 }
 .player-outline {
+  padding-top: 20px;
   text-align: center;
   background-color: #50B948;
   margin-left: 20%;
@@ -68,4 +69,6 @@
   margin-right: 25%;
   text-align: center;
   font-size: 30px;
+  background-color: #50B948;
+  padding: 30px;
 }
