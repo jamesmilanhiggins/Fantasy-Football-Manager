@@ -1,5 +1,12 @@
 <div>
-  <h3>{{(memberToDisplay | async)?.firstName}}</h3>
+  <h3>{{(memberToDisplay | async)?.firstName}} {{(memberToDisplay | async)?.lastName}}</h3>
   <h4>{{(memberToDisplay | async)?.lastName}}</h4>
-  <p>{{(memberToDisplay | async)?.userName}}</p>
+  <p>ESPN Username: {{(memberToDisplay | async)?.userName}}</p>
+  <p>Years in the league: {{(memberToDisplay | async)?.yearsInLeague}}</p>
+  <p>2016 Ranking: {{(memberToDisplay | async)?.lastYearRanking}}</p>
+  <p>2017 Projection: {{(memberToDisplay | async)?.projectionRanking}}</p>
+  <p>Location: {{(memberToDisplay | async)?.location}}</p>
+  <p>Champion: {{(memberToDisplay | async)?.leagueChampion}}</p>
+  <p>Role: {{(memberToDisplay | async)?.role}}</p>
+  <p>Job Title: {{(memberToDisplay | async)?.jobTitle}}</p>
 </div>

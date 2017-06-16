@@ -13,6 +13,8 @@ import { FirebaseListObservable } from 'angularfire2/database';
 export class ListMemberComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
+  filterByRole: string = "allRoles";
+
 
   constructor(private router: Router, private memberService: MemberService) {}
 
@@ -20,14 +22,11 @@ export class ListMemberComponent implements OnInit {
     this.members = this.memberService.getMembers();
   }
 
+  onChange(optionFromMenu) {
+    this.filterByRole = optionFromMenu;
+  }
+
   goToDetailPage(clickedMember) {
     this.router.navigate(['members', clickedMember.$key]);
   };
 }
-
-
-//   goToDetailPage(clickedProject) {
-//     this.router.navigate(['projects', clickedProject.$key]);
-//   };
-//
-// }
