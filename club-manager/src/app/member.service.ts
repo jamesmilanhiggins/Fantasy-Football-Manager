@@ -33,7 +33,8 @@ export class MemberService {
                                 location: localUpdatedMember.location,
                                 leagueChampion: localUpdatedMember.leagueChampion,
                                 role: localUpdatedMember.role,
-                                jobTitle: localUpdatedMember.jobTitle});
+                                jobTitle: localUpdatedMember.jobTitle,
+                                image: localUpdatedMember.image});
   }
 
   deleteMember(localMemberToDelete){

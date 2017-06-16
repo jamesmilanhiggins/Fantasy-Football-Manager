@@ -64,8 +64,14 @@
         <input #newJobTitle>
       </div>
 
+      <div>
+        <label>Image Link:</label>
+        <br>
+        <input #newImage>
+      </div>
 
-      <button (click)="submitForm(newFirstName.value, newLastName.value, newUserName.value, newYearsInLeague.value, newLastYearRanking.value, newProjectionRanking.value, newLocation.value, newLeagueChampion.value, newRole.value, newJobTitle.value); newFirstName.value=''; newLastName.value=''; newUserName.value=''; newYearsInLeague.value=''; newLastYearRanking.value=''; newProjectionRanking.value=''; newLocation.value=''; newLeagueChampion.value=''; newRole.value=''; newJobTitle.value=''">Add</button>
+
+      <button (click)="submitForm(newFirstName.value, newLastName.value, newUserName.value, newYearsInLeague.value, newLastYearRanking.value, newProjectionRanking.value, newLocation.value, newLeagueChampion.value, newRole.value, newJobTitle.value, newImage.value); newFirstName.value=''; newLastName.value=''; newUserName.value=''; newYearsInLeague.value=''; newLastYearRanking.value=''; newProjectionRanking.value=''; newLocation.value=''; newLeagueChampion.value=''; newRole.value=''; newJobTitle.value=''; newImage.value=''">Add</button>
     </div>
   </div>
 </div>

@@ -1,6 +1,6 @@
 <div>
   <h3>{{(memberToDisplay | async)?.firstName}} {{(memberToDisplay | async)?.lastName}}</h3>
-  <h4>{{(memberToDisplay | async)?.lastName}}</h4>
+  <img src="{{(memberToDisplay | async)?.image}}" class="portrait">
   <p>ESPN Username: {{(memberToDisplay | async)?.userName}}</p>
   <p>Years in the league: {{(memberToDisplay | async)?.yearsInLeague}}</p>
   <p>2016 Ranking: {{(memberToDisplay | async)?.lastYearRanking}}</p>
