@@ -39,8 +39,8 @@ $ bower install
 $ ng serve
 $ open localhost:4200 in your browser
 ```
-or visit live site [here]()
-
+or visit live site [here](https://marcusisonline2.firebaseapp.com)
+Note: You can log in with the test email: "testemail@gmail.com" and the password: "12456" to view the admin capabilities.
 
 ## Known Bugs
 
