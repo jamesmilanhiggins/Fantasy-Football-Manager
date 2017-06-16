@@ -7,7 +7,17 @@
   background-color: #f5f5f5;
   padding: 15px;
 }
-
+.nav {
+  font-size: 20px;
+}
+.login {
+  background-color: #FFFF00;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 2px;
+}
 .portrait {
   border-radius: 150px;
   width: 100px;
@@ -15,6 +25,24 @@
   box-shadow: 5px 5px 20px grey;
   margin: 10px;
 }
+.player-profile {
+  padding: 5px;
+  background-color: #50B948;
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;
+  border-radius: 5%;
+}
+.player-outline {
+  text-align: center;
+  background-color: #50B948;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+ .player-font {
+   font-size: 20px;
+   text-shadow: 5px;
+ }
 
 .navbar-nav {
   background-color: #50B948;
@@ -34,4 +62,10 @@
 }
 #admin-css {
   text-align: center;
+}
+.about-page {
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;
+  font-size: 30px;
 }

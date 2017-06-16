@@ -12,7 +12,7 @@ import { ListAnnouncementsComponent }   from './list-announcements/list-announce
 const appRoutes: Routes = [
   {
      path: '',
-     component: WelcomeComponent
+     component: ListMemberComponent
    },
    {
      path: 'about',

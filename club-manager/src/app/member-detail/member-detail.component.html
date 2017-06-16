@@ -1,12 +1,12 @@
-<div>
+<div class="player-profile">
   <h3>{{(memberToDisplay | async)?.firstName}} {{(memberToDisplay | async)?.lastName}}</h3>
   <img src="{{(memberToDisplay | async)?.image}}" class="portrait">
-  <p>ESPN Username: {{(memberToDisplay | async)?.userName}}</p>
-  <p>Years in the league: {{(memberToDisplay | async)?.yearsInLeague}}</p>
-  <p>2016 Ranking: {{(memberToDisplay | async)?.lastYearRanking}}</p>
-  <p>2017 Projection: {{(memberToDisplay | async)?.projectionRanking}}</p>
-  <p>Location: {{(memberToDisplay | async)?.location}}</p>
-  <p>Champion: {{(memberToDisplay | async)?.leagueChampion}}</p>
-  <p>Role: {{(memberToDisplay | async)?.role}}</p>
-  <p>Job Title: {{(memberToDisplay | async)?.jobTitle}}</p>
+  <p class="player-profile player-font">ESPN Username: {{(memberToDisplay | async)?.userName}}</p>
+  <p class="player-profile player-font">Years in the league: {{(memberToDisplay | async)?.yearsInLeague}}</p>
+  <p class="player-profile player-font">2016 Ranking: {{(memberToDisplay | async)?.lastYearRanking}}</p>
+  <p class="player-profile player-font">2017 Projection: {{(memberToDisplay | async)?.projectionRanking}}</p>
+  <p class="player-profile player-font">Location: {{(memberToDisplay | async)?.location}}</p>
+  <p class="player-profile player-font">Champion: {{(memberToDisplay | async)?.leagueChampion}}</p>
+  <p class="player-profile player-font">Role: {{(memberToDisplay | async)?.role}}</p>
+  <p class="player-profile player-font">Job Title: {{(memberToDisplay | async)?.jobTitle}}</p>
 </div>

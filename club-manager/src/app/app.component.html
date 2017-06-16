@@ -27,18 +27,15 @@
 
     <button class="btn btn-info btn-sm" *ngIf="(user | async)?.email == null" (click)="login(email.value, password.value); email.value=''; password.value=''">Login</button>
     <button class="btn btn-warning btn-sm" *ngIf="(user | async)?.email != null"(click)="logout()">Logout</button>
-
-    <div *ngIf="(user | async) == null"> Please log in. </div>
-    <div *ngIf="(user | async) != null"> Welcome in {{ (user | async)?.email }}!  You have admin access and can edit and delete members.</div>
+  </div>
+</nav>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="login" *ngIf="(user | async) == null"> Please log in. </div>
+    <div class="login" *ngIf="(user | async) != null"> Welcome in {{ (user | async)?.email }}!  You have admin access and can edit and delete members.</div>
 
   </div>
 </nav>
 <div class="container">
   <router-outlet></router-outlet>
 </div>
-
-<!-- <footer class="footer" *ngIf="(user | async) != null">
-  <div class="container">
-    <a class="text-muted" routerLink="admin">Admin</a>
-  </div>
-</footer> -->
