@@ -1,3 +1,75 @@
-<p>
-  admin works!
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add A New Member to the League</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>First Name:</label>
+        <br>
+        <input #newFirstName>
+      </div>
+
+      <div>
+        <label>Last Name:</label>
+        <br>
+        <input #newLastName>
+      </div>
+
+      <div>
+        <label>User Name:</label>
+        <br>
+        <input #newUserName>
+      </div>
+
+      <div>
+        <label>Years In The League:</label>
+        <br>
+        <input #newYearsInLeague>
+      </div>
+
+      <div>
+        <label>Last Years Ranking:</label>
+        <br>
+        <input #newLastYearRanking>
+      </div>
+
+      <div>
+        <label>Current Season Projected Ranking:</label>
+        <br>
+        <input #newProjectionRanking>
+      </div>
+
+      <div>
+        <label>Location:</label>
+        <br>
+        <input #newLocation>
+      </div>
+
+      <div>
+        <label>League Champion:</label>
+        <br>
+        <input #newLeagueChampion>
+      </div>
+
+      <div>
+        <label>Role:</label>
+        <br>
+        <input #newRole>
+      </div>
+
+      <div>
+        <label>Job Title:</label>
+        <br>
+        <input #newJobTitle>
+      </div>
+
+
+      <button (click)="submitForm(newFirstName.value, newLastName.value, newUserName.value, newYearsInLeague.value, newLastYearRanking.value, newProjectionRanking.value, newLocation.value, newLeagueChampion.value, newRole.value, newJobTitle.value); newFirstName.value=''; newLastName.value=''; newUserName.value=''; newYearsInLeague.value=''; newLastYearRanking.value=''; newProjectionRanking.value=''; newLocation.value=''; newLeagueChampion.value=''; newRole.value=''; newJobTitle.value=''">Add</button>
+    </div>
+  </div>
+</div>
+
+<div>
+  <app-list-member></app-list-member>
+</div>
