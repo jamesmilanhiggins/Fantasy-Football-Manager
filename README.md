@@ -68,5 +68,5 @@ _Please contact James Higgins at James.Milan.Higgins@gmail.com if you have any q
 Copyright (c) 2017 **_James Higgins**
 
 ![Homepage not logged in](club-manager/src/assets/images/logged-in.png)
-![homepage logged in](src/assets/images/logged-out.png)
-![pipe](src/assets/images/pipe.png)
+![homepage logged in](club-manager/src/assets/images/logged-out.png)
+![pipe](club-manager/src/assets/images/pipe.png)
